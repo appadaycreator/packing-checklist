@@ -4,4 +4,5 @@
 
 ## セットアップ
 1. `config.js` に Supabase の URL と ANON キーを設定します。
-2. 生成されたファイル一式をホスティング環境へ配置するだけで利用できます。
+2. `index.html` では CDN から読み込んだ `@supabase/supabase-js` を利用し、 `supabase.createClient` で初期化します。
+3. 生成されたファイル一式をホスティング環境へ配置するだけで利用できます。
