@@ -1037,8 +1037,7 @@
         function initializeApp() {
             // Supabaseの初期化
             if (typeof SUPABASE_URL !== 'undefined' && typeof SUPABASE_ANON_KEY !== 'undefined') {
-                // supabase-js v2 UMD では global オブジェクト `supabase` に createClient が用意されている
-                supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+                supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
             }
             
             // PWAサービスワーカー登録
